@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Jquery::Fg::Menu::Rails::VERSION
   spec.authors       = ["Joost Van Averbeke"]
   spec.email         = ["joost.van.averbeke@telenet.be"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{Wrapper for the jquery fg menu widget of the filament group}
+  spec.summary       = %q{Simple intrgration of the filament group jquery based fg menu widget}
+  spec.homepage      = "https://github.com/JoostVanAverbeke/jquery-fg-menu-rails"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
