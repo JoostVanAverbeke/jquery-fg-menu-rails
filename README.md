@@ -8,22 +8,19 @@ http://www.filamentgroup.com/lab/jquery_ipod_style_and_flyout_menus/
 
 Add this line to your application's Gemfile:
 
-    gem 'jquery-fg-menu-rails'
+    gem 'jquery-fg-menu-rails', github: 'JoostVanAverbeke/jquery-fg-menu-rails'
 
 And then execute:
 
     $ bundle install
 
-Or install it yourself as:
-
-    $ gem install jquery-fg-menu-rails
-
 ## Usage
 
 And include in your applications.js
-//=require fg.menu
 
-You'll need to install at least the jquery 1.3.2 in your rails application.
+	//=require fg.menu
+
+You definitly need to install the jquery 1.3.2 or higher in your rails application.
 Just for your information, this can be easily be realized by adding this line to your application's Gemfile
 
 	gem 'jquery-rails'
@@ -34,7 +31,8 @@ And then execute again:
 
 
 Include in your application.css
-*=require fg.menu
+	
+	*=require fg.menu
 
 ## Contributing
 
