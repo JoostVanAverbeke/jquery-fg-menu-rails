@@ -1,4 +1,4 @@
-# Jquery::Fg::Menu::Rails
+# jquery-fg-menu-rails
 
 Wrapper for the jquery fg menu widget of the filament group,
 Dropdown, iPod Drilldown, and Flyout styles with ARIA Support and ThemeRoller Ready
