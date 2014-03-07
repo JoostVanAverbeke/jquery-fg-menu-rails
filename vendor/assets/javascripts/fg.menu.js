@@ -13,7 +13,7 @@ Dual licensed under the MIT (filamentgroup.com/examples/mit-license.txt) and GPL
 
 var allUIMenus = [];
 
-$.fn.menu = function(options){
+$.fn.fgmenu = function(options){
 	var caller = this;
 	var options = options;
 	var m = new Menu(caller, options);	
@@ -39,6 +39,7 @@ function Menu(caller, options){
 	this.menuExists = false;
 	
 	var options = jQuery.extend({
+		rootUrl: '/',
 		content: null,
 		width: 180, // width of menu container, must be set or passed in to calculate widths of child menus
 		maxHeight: 180, // max height of menu (if a drilldown: height does not include breadcrumb)
@@ -244,8 +245,8 @@ function Menu(caller, options){
 	this.chooseItem = function(item){
 		menu.kill();
 		// edit this for your own custom function/callback:
-		$('#menuSelection').text($(item).text());	
-		location.href = $(item).attr('href');
+		$('#menuSelection').text($(item).text());
+		location.href = options.rootUrl + $(item).attr('href');
 	};
 };
 
